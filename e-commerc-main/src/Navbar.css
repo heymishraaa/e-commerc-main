@@ -1,0 +1,67 @@
+.navbar {
+    height: 60px; /* Same height as header */
+    display: flex;
+    align-items: center;
+    background-color: #131921; /* Same background color */
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar_search {
+    display: flex;
+    width: 500px;
+    flex: 1;
+    align-items: center;
+    border-radius: 24px; /* Same border-radius */
+}
+
+.navbar_searchInput {
+    height: 12px;
+    padding: 10px;
+    border: none;
+    width: 100%;
+}
+
+.navbar_searchIcon {
+    padding: 5px;
+    height: 22px !important;
+    background-color: #cd9042; /* Same background color for search icon */
+}
+
+.navbar_links {
+    display: flex;
+    align-items: center;
+    margin-right: 20px; /* Space from the right */
+}
+
+.navbar_link {
+    display: flex;
+    align-items: center;
+    text-decoration: none; /* Remove underline */
+    color: white; /* Text color */
+    margin-left: 20px; /* Space between links */
+}
+
+.navbar_optionWishlist {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.navbar_optionCount {
+    margin-left: 5px; /* Space between icon and count */
+    color: #FFD814; /* Amazon Yellow for wishlist count */
+}
+
+.navbar_optionCart {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.navbar_cartCount {
+    margin-left: 5px;
+    margin-right: 10px;
+}
+

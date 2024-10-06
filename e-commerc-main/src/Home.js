@@ -1,74 +1,80 @@
-import React from 'react'
-import "./Home.css"
+import React, { useEffect, useState } from 'react';
+import "./Home.css";
 import Product from './Product';
 
 function Home() {
-  return (
-    <div className="home"> 
-      <div className="home_container">
-        <img className='home_image' src={require("./istockphoto-498301640-1024x1024.jpg")} 
-         alt="" 
-        />
-        <div className='home_row'>
-            <Product 
-             id="100000"
-             title="The Lean Startup" 
-             price={29.99} 
-             image="https://m.media-amazon.com/images/I/41+ZsplOPWL._SY445_SX342_.jpg" 
-             rating={3}/>
-            <Product
-             id="100001"
-             title="Harry Potter: and the Prisoner of Azkaban - Gryffindor Edition"
-             price={19.99}
-             image="https://m.media-amazon.com/images/I/4148eudPKmL._SY445_SX342_.jpg"
-             rating={5} />
-        </div>
-        <div className='home_row'>
-            <Product
-             id="100002"
-             title="Harry Potter: and the Philosopher's Stone - Gryffindor Edition"
-             price={19.99}
-             image="https://m.media-amazon.com/images/I/81yA0EpKucL._SY522_.jpg"
-             rating={5} />
-            <Product
-             id="100003"
-             title="Harry Potter: and the Chamber of Secrets - Gryffindor Edition"
-             price={19.99}
-             image="https://m.media-amazon.com/images/I/51LBatXrSkL._SY445_SX342_.jpg"
-             rating={5} />
-            <Product
-             id="100004"
-             title="Harry Potter: and the Goblet of Fire - Gryffindor Edition"
-             price={19.99}
-             image="https://m.media-amazon.com/images/I/41Pce2XCYrL._SY445_SX342_.jpg"
-             rating={5} />
-        </div>
-        <div className='home_row'>
-            <Product
-             id="100005"
-             title="Harry Potter: and the Order of the Phoenix - Gryffindor Edition"
-             price={19.99}
-             image="https://m.media-amazon.com/images/I/41K3RcliRDL._SY445_SX342_.jpg"
-             rating={5} />
-             <Product
-             id="100006"
-             title="Harry Potter: and the Half-Blood Prine - Gryffindor Edition"
-             price={19.99}
-             image="https://m.media-amazon.com/images/I/51xa23rkJSL._SY445_SX342_.jpg"
-             rating={5} />
-        </div>
-        <div className='home_row'>
-        <Product
-             id="100006"
-             title="Harry Potter: and the Deathly Hallows - Gryffindor Edition"
-             price={19.99}
-             image="https://m.media-amazon.com/images/I/8137pZnQAVL._SY522_.jpg"
-             rating={5} />
-        </div>
+    const [products, setProducts] = useState([]);
+    const [loading, setLoading] = useState(true);
 
+    useEffect(() => {
+        const fetchProducts = async () => {
+            try {
+                const response = await fetch('/products.json');
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                const data = await response.json();
+                setProducts(data);
+            } catch (error) {
+                console.error("Error fetching products:", error);
+            } finally {
+                setLoading(false);
+            }
+        };
+
+        fetchProducts();
+    }, []);
+
+    const arrangeProducts = () => {
+        const arranged = [];
+        let i = 0;
+
+        while (i < products.length) {
+            let count;
+
+            if (arranged.length % 4 === 0) {
+                count = 2; // (4n+1) - 2 products
+            } else if (arranged.length % 4 === 1) {
+                count = 3; // (4n+2) - 3 products
+            } else if (arranged.length % 4 === 2) {
+                count = 2; // (4n+3) - 2 products
+            } else {
+                count = 1; // (4n) - 1 product
+            }
+
+            arranged.push(products.slice(i, i + count));
+            i += count; // Move the index forward by the count of products added
+        }
+
+        return arranged;
+    };
+
+    const arrangedProducts = arrangeProducts();
+
+    if (loading) {
+        return <div>Loading...</div>;
+    }
+
+    return (
+        <div className="home">
+            <div className="home_container">
+                <img className='home_image' src={require("./istockphoto-498301640-1024x1024.jpg")} alt="" />
+                {arrangedProducts.map((row, rowIndex) => (
+                    <div className='home_row' key={rowIndex}>
+                        {row.map(product => (
+                            <Product
+                                id={product.id}
+                                title={product.name}
+                                price={product.price}
+                                image={product.image}
+                                rating={product.rating || 3} // Default rating if not specified
+                            />
+                        ))}
+                    </div>
+                ))}
+            </div>
         </div>
-    </div>
-  );
+    );
 }
 
 export default Home;
