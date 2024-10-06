@@ -51,7 +51,7 @@
 }
 
 .header_cartCount{
-    margin-left: 10px;
+    margin-left: 5px;
     margin-right: 10px;
 }
 
@@ -66,4 +66,20 @@
     margin-left: 10px;
     margin-right: 10px;
     color: white;
+}
+
+.header_optionWishlist {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.header_optionWishlist .MuiSvgIcon-root {
+    color: #FFD814; /* Amazon Yellow */
+}
+
+.header_option2.header_wishlistCount {
+    margin-left: 5px; /* Add some spacing if needed */
+    margin-right: 10px;
+    color: #FFD814
 }

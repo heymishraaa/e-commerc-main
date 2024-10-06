@@ -1,0 +1,47 @@
+/* WishlistProduct.css */
+
+.wishlistProduct {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #ccc; /* Light border between products */
+}
+
+.wishlistProduct_image {
+    width: 100px; /* Fixed width for images */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: contain; /* Ensure the image fits nicely */
+    margin-right: 20px; /* Space between image and product info */
+}
+
+.wishlistProduct_info {
+    flex: 1; /* Take remaining space */
+}
+
+.wishlistProduct_title {
+    font-size: 18px; /* Title size */
+    font-weight: 600; /* Bold title */
+    margin-bottom: 5px; /* Space below title */
+}
+
+.wishlistProduct_price {
+    font-size: 16px; /* Price size */
+    margin-bottom: 10px; /* Space below price */
+}
+
+.wishlistProduct_rating {
+    display: flex; /* Flexbox for rating stars */
+}
+
+.wishlistProduct button {
+    padding: 10px; /* Button padding */
+    margin-top: 10px; /* Space above button */
+    background-color: #f0c14b; /* Amazon-like yellow */
+    border: 1px solid #a88734; /* Matching border */
+    border-radius: 3px; /* Slight rounding */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.wishlistProduct button:hover {
+    background-color: #ddb347; /* Darker shade on hover */
+}
