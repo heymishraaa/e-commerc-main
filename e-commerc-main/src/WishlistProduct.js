@@ -1,6 +1,7 @@
 import React from 'react';
 import './WishlistProduct.css';
 import { useStateValue } from './StateProvider';
+import { Link } from 'react-router-dom';
 
 function WishlistProduct({ id, image, title, price, rating }) {
     const [{ wishlist }, dispatch] = useStateValue();
@@ -21,9 +22,19 @@ function WishlistProduct({ id, image, title, price, rating }) {
 
     return (
         <div className='wishlistProduct'>
-            <img className='wishlistProduct_image' src={image} alt="" />
+            <Link to={{
+                pathname: `/product/${id}`,
+                state: { product: { id, title, image, price, rating } },
+            }}>
+                <img className='wishlistProduct_image' src={image} alt="" />
+            </Link>
             <div className='wishlistProduct_info'>
-                <p className='wishlistProduct_title'>{title}</p>
+                <Link to={{
+                    pathname: `/product/${id}`,
+                    state: { product: { id, title, image, price, rating } },
+                }}>
+                    <p className='wishlistProduct_title'>{title}</p>
+                </Link>
                 <p className='wishlistProduct_price'>
                     <small>$</small>
                     <strong>{price}</strong>

@@ -1,0 +1,48 @@
+.productDetails {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f9f9f9; /* Light background for contrast */
+    padding: 20px;
+    max-width: 800px; /* Limit width for better readability */
+    margin: auto; /* Center the content */
+    border-radius: 8px; /* Rounded corners for a softer look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.productDetails img {
+    max-width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Match the container's rounded corners */
+    margin-bottom: 20px; /* Space below the image */
+}
+
+.productDetails h2 {
+    font-size: 24px; /* Larger title */
+    margin: 10px 0; /* Spacing above and below */
+}
+
+.product_price {
+    font-size: 20px; /* Slightly larger price */
+    margin: 10px 0; /* Spacing above and below */
+}
+
+.product_rating {
+    display: flex; /* Align stars horizontally */
+    margin: 10px 0; /* Spacing above and below */
+}
+
+.backButton {
+    background-color: #f0c14b; /* Same button style as in Product */
+    border: 1px solid #a88734; /* Match border color */
+    color: #111; /* Text color */
+    padding: 10px 20px; /* Button padding */
+    margin-bottom: 20px; /* Space below the button */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 4px; /* Slight rounding */
+    text-decoration: none; /* Remove underline */
+}
+
+.backButton:hover {
+    background-color: #e2b847; /* Darker on hover */
+}

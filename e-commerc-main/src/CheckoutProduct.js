@@ -1,6 +1,7 @@
 import React from 'react';
 import './CheckoutProduct.css';
 import { useStateValue } from './StateProvider';
+import { Link } from 'react-router-dom';
 
 function CheckoutProduct({ id, image, title, price, rating }) {
     const [{ cart }, dispatch] = useStateValue();
@@ -31,10 +32,20 @@ function CheckoutProduct({ id, image, title, price, rating }) {
 
     return (
         <div className='checkoutProduct'>
-            <img className='checkoutProduct_image' src={image} alt='' />
+            <Link to={{
+                pathname: `/product/${id}`,
+                state: { product: { id, title, image, price, rating } },
+            }}>
+                <img className='checkoutProduct_image' src={image} alt='' />
+            </Link>
 
             <div className='checkoutProduct_info'>
-                <p className='checkoutProduct_title'>{title}</p>
+                <Link to={{
+                    pathname: `/product/${id}`,
+                    state: { product: { id, title, image, price, rating } },
+                }}>
+                    <p className='checkoutProduct_title'>{title}</p>
+                </Link>
                 <p className='checkoutProduct_price'>
                     <small>$</small>
                     <strong>{price}</strong>

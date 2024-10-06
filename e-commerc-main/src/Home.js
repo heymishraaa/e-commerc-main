@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import "./Home.css";
 import Product from './Product';
+import productsData from './products.json';
 
 function Home() {
     const [products, setProducts] = useState([]);
@@ -63,10 +64,12 @@ function Home() {
                     <div className='home_row' key={rowIndex}>
                         {row.map(product => (
                             <Product
+                                key={product.id}
                                 id={product.id}
                                 title={product.name}
                                 price={product.price}
                                 image={product.image}
+                                description={product.description}
                                 rating={product.rating || 3} // Default rating if not specified
                             />
                         ))}

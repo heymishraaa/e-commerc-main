@@ -1,0 +1,10 @@
+/* ProductList.css */
+.productList {
+    padding: 20px;
+}
+
+.productList_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}

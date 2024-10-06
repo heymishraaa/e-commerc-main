@@ -6,6 +6,7 @@ import FavoriteIcon from '@mui/icons-material/Favorite';
 import { Link } from 'react-router-dom';
 import { useStateValue } from './StateProvider';
 
+
 function Header() {
     const [{ cart, wishlist }, dispatch] = useStateValue();
 
@@ -34,6 +35,12 @@ function Header() {
                     <span className='header_option1'>Your</span>
                     <span className='header_option2'>Prime</span>
                 </div>
+                <Link to="/product-list">
+                  <div className='header_option'>
+                      <span className='header_option1'>Product</span>
+                      <span className='header_option2'>List</span>
+                  </div>
+              </Link>
                 <Link to="/wishlist">
                     <div className='header_optionWishlist'>
                         <FavoriteIcon />
