@@ -8,3 +8,22 @@
     flex-wrap: wrap;
     justify-content: space-around;
 }
+
+.filter-options {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.filter-options input {
+    margin-right: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.filter-options select {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}

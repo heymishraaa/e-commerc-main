@@ -26,6 +26,7 @@
 }
 
 .product > img{
+    border: 1px solid lightgray;
     max-height: 200px;
     width: 100%;
     object-fit: contain;

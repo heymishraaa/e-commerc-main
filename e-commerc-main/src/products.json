@@ -1,66 +1,32 @@
 [
-  {
-    "id": 100000,
-    "name": "The Lean Startup",
-    "description": "The Lean Startup",
-    "price": 29.99,
-    "image": "https://m.media-amazon.com/images/I/41+ZsplOPWL._SY445_SX342_.jpg",
-    "rating": 3
-  },
-  {
-    "id": 100001,
-    "name": "Harry Potter: and the Prisoner of Azkaban - Gryffindor Edition",
-    "description": "Harry Potter: and the Prisoner of Azkaban - Gryffindor Edition",
-    "price": 19.99,
-    "image": "https://m.media-amazon.com/images/I/4148eudPKmL._SY445_SX342_.jpg",
-    "rating": 4
-  },
-  {
-    "id": 100002,
-    "name": "Harry Potter: and the Philosopher's Stone - Gryffindor Edition",
-    "description": "Harry Potter: and the Philosopher's Stone - Gryffindor Edition",
-    "price": 19.99,
-    "image": "https://m.media-amazon.com/images/I/81yA0EpKucL._SY522_.jpg",
-    "rating": 4
-  },
-  {
-    "id": 100003,
-    "name": "Harry Potter: and the Chamber of Secrets - Gryffindor Edition",
-    "description": "Harry Potter: and the Chamber of Secrets - Gryffindor Edition",
-    "price": 19.99,
-    "image": "https://m.media-amazon.com/images/I/51LBatXrSkL._SY445_SX342_.jpg",
-    "rating": 3
-  },
-  {
-    "id": 100004,
-    "name": "Harry Potter: and the Goblet of Fire - Gryffindor Edition",
-    "description": "Harry Potter: and the Goblet of Fire - Gryffindor Edition",
-    "price": 19.99,
-    "image": "https://m.media-amazon.com/images/I/41Pce2XCYrL._SY445_SX342_.jpg",
-    "rating": 3
-  },
-  {
-    "id": 100005,
-    "name": "Harry Potter: and the Order of the Phoenix - Gryffindor Edition",
-    "description": "Harry Potter: and the Order of the Phoenix - Gryffindor Edition",
-    "price": 19.99,
-    "image": "https://m.media-amazon.com/images/I/41K3RcliRDL._SY445_SX342_.jpg",
-    "rating": 4
-  },
-  {
-    "id": 100006,
-    "name": "Harry Potter: and the Half-Blood Prince - Gryffindor Edition",
-    "description": "Harry Potter: and the Half-Blood Prince - Gryffindor Edition",
-    "price": 19.99,
-    "image": "https://m.media-amazon.com/images/I/51xa23rkJSL._SY445_SX342_.jpg",
-    "rating": 4
-  },
-  {
-    "id": 100007,
-    "name": "Harry Potter: and the Deathly Hallows - Gryffindor Edition",
-    "description": "Harry Potter: and the Deathly Hallows - Gryffindor Edition",
-    "price": 19.99,
-    "image": "https://m.media-amazon.com/images/I/8137pZnQAVL._SY522_.jpg",
-    "rating": 5
-  }
+  {"id": 1, "name": "The Great Gatsby", "price": 10.99, "image": "https://m.media-amazon.com/images/I/515Ra7ttqIL._SX342_SY445_.jpg", "description": "Set in the 1920s, this novel explores themes of wealth, love, and the American Dream. It follows the mysterious Jay Gatsby and his obsession with Daisy Buchanan. Through the eyes of Nick Carraway, readers witness the decadence and disillusionment of the era.", "rating": 4},
+  {"id": 2, "name": "1984", "price": 8.99, "image": "https://m.media-amazon.com/images/I/51A9t9irmEL._SY445_SX342_.jpg", "description": "George Orwell's dystopian vision presents a totalitarian regime that uses surveillance, censorship, and propaganda to control its citizens. The protagonist, Winston Smith, grapples with rebellion and conformity in a society where individuality is crushed. This novel serves as a chilling warning about the dangers of oppressive governance.", "rating": 5},
+  {"id": 3, "name": "To Kill a Mockingbird", "price": 12.99, "image": "https://m.media-amazon.com/images/I/51vfmP05E8L._SY445_SX342_.jpg", "description": "This classic novel explores racial injustice and moral growth in the Deep South during the 1930s. Through the eyes of young Scout Finch, readers witness her father's fight to defend a black man wrongfully accused of a crime. The story delves into themes of empathy, innocence, and the complexities of human nature.", "rating": 5},
+  {"id": 4, "name": "Pride and Prejudice", "price": 9.99, "image": "https://m.media-amazon.com/images/I/61BahDaTZXL._SY445_SX342_.jpg", "description": "A witty exploration of love, class, and societal expectations in 19th-century England. Elizabeth Bennet navigates her own prejudices and misunderstandings while confronting the aloof Mr. Darcy. Jane Austen's sharp commentary on the norms of her time remains timeless and relevant.", "rating": 4},
+  {"id": 5, "name": "The Catcher in the Rye", "price": 11.99, "image": "https://images-na.ssl-images-amazon.com/images/I/81OthjkJBuL.jpg", "description": "This novel follows Holden Caulfield, a teenager who becomes disillusioned with the world around him. Through his journey in New York City, he grapples with feelings of alienation and loss. J.D. Salinger's portrayal of adolescence captures the struggles of growing up in a complex society.", "rating": 4},
+  {"id": 6, "name": "The Hobbit", "price": 10.99, "image": "https://m.media-amazon.com/images/I/810+yJB3q5L._SY522_.jpg", "description": "A timeless fantasy adventure that follows Bilbo Baggins, a reluctant hobbit who embarks on a quest to reclaim treasure from the dragon Smaug. Along the way, he encounters trolls, elves, and goblins, discovering his own courage. J.R.R. Tolkien's rich world-building sets the stage for the epic Lord of the Rings trilogy.", "rating": 5},
+  {"id": 7, "name": "Fahrenheit 451", "price": 8.99, "image": "https://m.media-amazon.com/images/I/41EPJA06qlL._SY445_SX342_.jpg", "description": "In a future where books are banned and 'firemen' burn any that are found, Guy Montag begins to question his role in society. This novel highlights the dangers of censorship and the importance of critical thought. Ray Bradbury's chilling narrative serves as a stark reminder of the value of literature.", "rating": 4},
+  {"id": 8, "name": "Brave New World", "price": 12.99, "image": "https://m.media-amazon.com/images/I/51lOr5v+a9L._SL1500_.jpg", "description": "Aldous Huxley's dystopian society is characterized by technological advancements and the sacrifice of individuality for societal stability. The novel raises questions about freedom, happiness, and the cost of progress. As characters navigate their conditioned lives, readers are left to ponder the implications of a controlled existence.", "rating": 5},
+  {"id": 9, "name": "Moby-Dick", "price": 13.99, "image": "https://i.thriftbooks.com/api/imagehandler/m/6C8D5CD9479E0915E7274F56757CE50EEB59D5DC.jpeg", "description": "Herman Melville's epic tale of Captain Ahab's obsession with hunting the great white whale explores themes of fate, revenge, and the human spirit. The narrative weaves together adventure and philosophical musings. Moby-Dick remains a profound exploration of man's relationship with nature and the unknown.", "rating": 4},
+  {"id": 10, "name": "War and Peace", "price": 14.99, "image": "https://pictures.abebooks.com/isbn/9780060798871-us.jpg", "description": "Leo Tolstoy's monumental novel intertwines the lives of several families against the backdrop of the Napoleonic Wars. It examines themes of love, loss, and the impact of history on personal destinies. War and Peace is celebrated for its intricate character development and philosophical depth.", "rating": 5},
+  {"id": 11, "name": "The Odyssey", "price": 9.99, "image": "https://i5.walmartimages.com/seo/Penguin-Classics-Deluxe-Edition-The-Odyssey-Penguin-Classics-Deluxe-Edition-Paperback-9780140268867_4c66a174-42cc-4645-a035-9949858eb279.c55bfa8f2fa05848e7879c3275937a46.jpeg?odnHeight=2000&odnWidth=2000&odnBg=FFFFFF", "description": "An epic poem attributed to Homer, recounting the adventures of Odysseus as he struggles to return home after the Trojan War. Filled with mythical creatures and divine intervention, the story highlights themes of perseverance, loyalty, and the quest for identity. The Odyssey is a foundational work of Western literature.", "rating": 4},
+  {"id": 12, "name": "Crime and Punishment", "price": 10.99, "image": "https://m.media-amazon.com/images/I/51-Ux2rlhUL._SY445_SX342_.jpg", "description": "This psychological thriller by Fyodor Dostoevsky follows the troubled student Raskolnikov, who commits a murder and grapples with guilt and morality. The narrative delves into themes of redemption, justice, and the complexity of human conscience. It remains a profound exploration of the human psyche.", "rating": 5},
+  {"id": 13, "name": "The Brothers Karamazov", "price": 11.99, "image": "https://m.media-amazon.com/images/I/71agR0zF7mL._SL1200_.jpg", "description": "A philosophical novel that delves into questions of faith, doubt, and morality through the lives of the Karamazov brothers. Each character embodies different philosophical ideas, leading to profound discussions on ethics and existence. Dostoevsky's masterpiece remains a cornerstone of existential literature.", "rating": 5},
+  {"id": 14, "name": "Wuthering Heights", "price": 8.99, "image": "https://m.media-amazon.com/images/I/51Ci+XSi65L._SY445_SX342_.jpg", "description": "Emily Brontë's only novel, set on the Yorkshire moors, tells the passionate and tragic love story of Heathcliff and Catherine Earnshaw. The story is marked by themes of revenge, social class, and the supernatural. Its intense emotion and complex characters make it a classic of English literature.", "rating": 4},
+  {"id": 15, "name": "Jane Eyre", "price": 10.99, "image": "https://m.media-amazon.com/images/I/51BkCLmQ5jS._SY445_SX342_.jpg", "description": "Charlotte Brontë's novel follows the life of the orphaned Jane Eyre, who overcomes hardship to find love and independence. The narrative explores themes of morality, feminism, and social criticism. Jane's journey to self-discovery and empowerment resonates with readers across generations.", "rating": 5},
+  {"id": 16, "name": "The Picture of Dorian Gray", "price": 9.99, "image": "https://m.media-amazon.com/images/I/41Vsw10wmKL._SY445_SX342_.jpg", "description": "Oscar Wilde's novel tells the story of Dorian Gray, a young man whose portrait ages while he remains youthful. This exploration of vanity and moral corruption raises questions about beauty and morality. Wilde's witty prose and sharp social commentary make this a compelling read.", "rating": 4},
+  {"id": 17, "name": "The Grapes of Wrath", "price": 12.99, "image": "https://m.media-amazon.com/images/I/81yN7h6yG-L._SL1500_.jpg", "description": "John Steinbeck's powerful novel follows the Joad family as they travel west during the Great Depression in search of a better life. The narrative addresses themes of social injustice and human resilience. Steinbeck's vivid portrayal of hardship and hope remains relevant today.", "rating": 5},
+  {"id": 18, "name": "The Sun Also Rises", "price": 11.99, "image": "https://m.media-amazon.com/images/I/51mNj6fCf5L._SY445_SX342_.jpg", "description": "Ernest Hemingway's novel captures the disillusionment of the Lost Generation after World War I. Through the experiences of expatriates in Europe, it examines themes of love, loss, and the search for meaning. Hemingway's terse prose and keen observations make this a classic of modern literature.", "rating": 4},
+  {"id": 19, "name": "A Farewell to Arms", "price": 10.99, "image": "https://m.media-amazon.com/images/I/41l94o4BoxL._SY445_SX342_.jpg", "description": "This semi-autobiographical novel by Ernest Hemingway follows an American ambulance driver in the Italian army during World War I. It explores themes of love, war, and the fragility of life. The poignant narrative captures the brutality of conflict and the depth of human emotions.", "rating": 5},
+  {"id": 20, "name": "The Bell Jar", "price": 8.99, "image": "https://target.scene7.com/is/image/Target/GUEST_3d59fce0-9740-4a9f-a9a6-55b6ba4fa374?wid=800&hei=800&qlt=80&fmt=pjpeg", "description": "Sylvia Plath's semi-autobiographical novel chronicles the life of Esther Greenwood, a young woman struggling with mental illness. The narrative delves into themes of identity, societal expectations, and the search for self. Plath's candid exploration of depression resonates with many readers.", "rating": 4},
+  {"id": 21, "name": "The Handmaid's Tale", "price": 10.99, "image": "https://i5.walmartimages.com/seo/The-Handmaid-s-Tale-Movie-Tie-In-Media-tie-in-Paperback-9780525435006_17e74bc6-194d-4ad5-8097-59289e38bc93_1.8f65230065760cf36886aa2c1506bc6d.jpeg?odnHeight=2000&odnWidth=2000&odnBg=FFFFFF", "description": "Margaret Atwood's dystopian novel presents a chilling vision of a totalitarian society where women are subjugated. Through the eyes of Offred, a Handmaid, the story explores themes of power, gender, and resistance. Atwood's work serves as a powerful commentary on contemporary issues.", "rating": 5},
+  {"id": 22, "name": "The Road", "price": 12.99, "image": "https://m.media-amazon.com/images/I/41EHCc+EG1L._SY445_SX342_.jpg", "description": "Cormac McCarthy's post-apocalyptic novel follows a father and son on a harrowing journey through a desolate landscape. The narrative grapples with themes of survival, love, and the remnants of humanity. McCarthy's sparse prose creates a haunting atmosphere and emotional depth.", "rating": 4},
+  {"id": 23, "name": "The Fault in Our Stars", "price": 9.99, "image": "https://m.media-amazon.com/images/I/41RDgCHpGTL._SY445_SX342_.jpg", "description": "John Green's poignant novel tells the love story of two teenagers, Hazel and Gus, both battling cancer. Their journey together explores themes of love, mortality, and the meaning of life. Green's heartfelt narrative captures the beauty and pain of young love in the face of adversity.", "rating": 5},
+  {"id": 24, "name": "The Alchemist", "price": 11.99, "image": "https://m.media-amazon.com/images/I/51YsnEoNr-L._SY445_SX342_.jpg", "description": "Paulo Coelho's philosophical novel follows Santiago, a shepherd who dreams of discovering treasure in Egypt. As he embarks on his journey, he learns about the importance of following one's dreams and listening to one's heart. The Alchemist inspires readers to seek their own personal legends.", "rating": 4},
+  {"id": 25, "name": "The Chronicles of Narnia", "price": 14.99, "image": "https://m.media-amazon.com/images/I/81pDmBiU4bL._SY522_.jpg", "description": "C.S. Lewis's beloved series invites readers into the magical world of Narnia, where children embark on adventures filled with mythical creatures and moral lessons. Themes of courage, redemption, and sacrifice are woven throughout the tales. This classic series continues to enchant readers of all ages.", "rating": 5},
+  {"id": 26, "name": "Catch-22", "price": 12.99, "image": "https://i.thriftbooks.com/api/imagehandler/m/D195142F73416F44AEAD81FA1A91DA38B01723E0.jpeg", "description": "Joseph Heller's satirical novel highlights the absurdities of war through the experiences of Captain John Yossarian. The term 'Catch-22' has become synonymous with illogical and contradictory rules. Heller's dark humor and sharp commentary on bureaucracy resonate with readers even today.", "rating": 4},
+  {"id": 27, "name": "Life of Pi", "price": 10.99, "image": "https://m.media-amazon.com/images/I/810uU5knwLL._SY522_.jpg", "description": "Yann Martel's novel tells the incredible story of Pi Patel, a young boy stranded on a lifeboat with a Bengal tiger. The narrative explores themes of faith, survival, and the nature of reality. Life of Pi challenges readers to consider the stories we tell and the truths we believe.", "rating": 5},
+  {"id": 28, "name": "The Kite Runner", "price": 8.99, "image": "https://m.media-amazon.com/images/I/41CpyrsCpEL._SY445_SX342_.jpg", "description": "Khaled Hosseini's debut novel tells the story of Amir, a boy from Kabul, who struggles with guilt and redemption following a childhood betrayal. The narrative spans decades, reflecting the tumultuous history of Afghanistan. The Kite Runner explores themes of friendship, loyalty, and the power of forgiveness.", "rating": 4},
+  {"id": 29, "name": "The Book Thief", "price": 9.99, "image": "https://m.media-amazon.com/images/I/51APkyJzNlL._SY445_SX342_.jpg", "description": "Set in Nazi Germany, Markus Zusak's novel follows Liesel Meminger, a young girl who finds solace in stealing books. Narrated by Death, the story examines the power of words to provide hope amidst darkness. The Book Thief is a poignant exploration of love, loss, and the human spirit.", "rating": 5},
+  {"id": 30, "name": "The Road Less Traveled", "price": 10.99, "image": "https://m.media-amazon.com/images/I/41AQbJjr6tL._SY445_SX342_.jpg", "description": "M. Scott Peck's self-help classic combines psychology and spirituality to guide readers toward personal growth and fulfillment. Through insights into love, discipline, and grace, Peck encourages individuals to confront challenges and seek deeper meaning in life. This influential work inspires self-discovery and transformation.", "rating": 5}
 ]

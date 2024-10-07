@@ -11,16 +11,12 @@
 }
 
 .productDetails img {
-    max-width: 100%; /* Make the image responsive */
+    max-width: 50%; /* Make the image responsive */
     height: auto; /* Maintain aspect ratio */
     border-radius: 8px; /* Match the container's rounded corners */
     margin-bottom: 20px; /* Space below the image */
 }
 
-.productDetails h2 {
-    font-size: 24px; /* Larger title */
-    margin: 10px 0; /* Spacing above and below */
-}
 
 .product_price {
     font-size: 20px; /* Slightly larger price */

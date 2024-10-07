@@ -46,7 +46,7 @@ function ProductDetails() {
             </button>
             <img src={product.image} alt={product.title} />
             <h1>{product.title}</h1>
-            <h2>{product.description}</h2>
+            <p>{product.description}</p>
             <p className="product_price">
                 <small>$</small>
                 <strong>{product.price}</strong>

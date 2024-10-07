@@ -1,17 +1,18 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import './Header.css';
 import SearchIcon from '@mui/icons-material/Search';
 import ShoppingBasketIcon from '@mui/icons-material/ShoppingBasket';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import { Link, useHistory } from 'react-router-dom';
 import { useStateValue } from './StateProvider';
-import productsData from './products.json'; // Import your product data
+import productsData from './products.json';
 
 function Header() {
     const [{ cart, wishlist }, dispatch] = useStateValue();
     const [searchTerm, setSearchTerm] = useState('');
     const [suggestions, setSuggestions] = useState([]);
     const history = useHistory();
+    const suggestionsRef = useRef(null); // Create a ref for the suggestions dropdown
 
     useEffect(() => {
         if (searchTerm.length >= 3) {
@@ -34,15 +35,27 @@ function Header() {
     };
 
     const handleSuggestionClick = (product) => {
-        console.log('Selected product:', product); // Debugging line
-        // Redirect to the product details page with the product data
         history.push({
             pathname: `/product/${product.id}`,
-            state: { product } // Pass the whole product object
+            state: { product }
         });
         setSearchTerm('');
         setSuggestions([]);
     };
+
+    // Close suggestions dropdown when clicking outside
+    const handleClickOutside = (event) => {
+        if (suggestionsRef.current && !suggestionsRef.current.contains(event.target)) {
+            setSuggestions([]);
+        }
+    };
+
+    useEffect(() => {
+        document.addEventListener('mousedown', handleClickOutside);
+        return () => {
+            document.removeEventListener('mousedown', handleClickOutside);
+        };
+    }, []);
 
     return (
         <div className='header'>
@@ -63,13 +76,14 @@ function Header() {
                     <SearchIcon className='header_searchIcon' />
                 </button>
                 {suggestions.length > 0 && (
-                    <div className="suggestions_dropdown">
+                    <div className="suggestions_dropdown" ref={suggestionsRef}>
                         {suggestions.map((product) => (
                             <div 
                                 key={product.id} 
                                 className="suggestion_item"
-                                onClick={() => handleSuggestionClick(product)} // Pass the whole product object
+                                onClick={() => handleSuggestionClick(product)}
                             >
+                                <img src={product.image} alt={product.name} className="suggestion_image" />
                                 {product.name}
                             </div>
                         ))}
@@ -77,7 +91,7 @@ function Header() {
                 )}
             </form>
             <div className='header_nav'>
-                <div className='header_option'>
+            <div className='header_option'>
                     <span className='header_option1'>Hello Guest</span>
                     <span className='header_option2'>Sign in</span>
                 </div>

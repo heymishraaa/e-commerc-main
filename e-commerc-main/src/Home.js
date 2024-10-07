@@ -3,28 +3,20 @@ import "./Home.css";
 import Product from './Product';
 import productsData from './products.json';
 
+
 function Home() {
-    const [products, setProducts] = useState([]);
-    const [loading, setLoading] = useState(true);
+    const [products, setProducts] = useState((productsData));
+    const [loading, setLoading] = useState(false);
 
     useEffect(() => {
-        const fetchProducts = async () => {
-            try {
-                const response = await fetch('/products.json');
-                if (!response.ok) {
-                    throw new Error('Network response was not ok');
-                }
-                const data = await response.json();
-                setProducts(data);
-            } catch (error) {
-                console.error("Error fetching products:", error);
-            } finally {
-                setLoading(false);
-            }
-        };
+        if (!products || products.length === 0) {
+            setLoading(true);
+        }
+    }, [products]);
 
-        fetchProducts();
-    }, []);
+    if (loading) {
+        return <div>Loading...</div>;
+    }
 
     const arrangeProducts = () => {
         const arranged = [];
