@@ -16,7 +16,7 @@ This project is a fully functional e-commerce bookstore application, inspired by
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/yourusername/ecommerce-bookstore.git
+   git clone https://github.com/heymishraaa/e-commerc-main.git
    cd ecommerce-bookstore
    ```
 
