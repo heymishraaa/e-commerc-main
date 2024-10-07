@@ -59,18 +59,17 @@ function Home() {
     return (
         <div className="home">
             <div className="home_container">
-                <img className='home_image' src={require("./istockphoto-498301640-1024x1024.jpg")} alt="" />
+                <img className='home_image' src="https://www.shutterstock.com/shutterstock/photos/2373695369/display_1500/stock-vector-flash-sale-promotional-labels-templates-set-special-offer-with-thunder-sign-and-hand-lettering-for-2373695369.jpg" alt="" />
                 {arrangedProducts.map((row, rowIndex) => (
                     <div className='home_row' key={rowIndex}>
                         {row.map(product => (
                             <Product
-                                key={product.id}
                                 id={product.id}
                                 title={product.name}
                                 price={product.price}
                                 image={product.image}
                                 description={product.description}
-                                rating={product.rating || 3} // Default rating if not specified
+                                rating={product.rating} // Default rating if not specified
                             />
                         ))}
                     </div>

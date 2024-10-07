@@ -34,6 +34,7 @@ function Header() {
     };
 
     const handleSuggestionClick = (product) => {
+        console.log('Selected product:', product); // Debugging line
         // Redirect to the product details page with the product data
         history.push({
             pathname: `/product/${product.id}`,

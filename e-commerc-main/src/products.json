@@ -1,59 +1,66 @@
 [
-    {
-      "id": 100000,
-      "name": "The Lean Startup",
-      "description": "The Lean Startup",
-      "price": 29.99,
-      "image": "https://m.media-amazon.com/images/I/41+ZsplOPWL._SY445_SX342_.jpg"
-    },
-    {
-      "id": 100001,
-      "name": "Harry Potter: and the Prisoner of Azkaban - Gryffindor Edition",
-      "description": "Harry Potter: and the Prisoner of Azkaban - Gryffindor Edition",
-      "price": 19.99,
-      "image": "https://m.media-amazon.com/images/I/4148eudPKmL._SY445_SX342_.jpg"
-    },
-    {
-      "id": 100002,
-      "name": "Harry Potter: and the Philosopher's Stone - Gryffindor Edition",
-      "description": "Harry Potter: and the Philosopher's Stone - Gryffindor Edition",
-      "price": 19.99,
-      "image": "https://m.media-amazon.com/images/I/81yA0EpKucL._SY522_.jpg"
-    },
-    {
-      "id": 100003,
-      "name": "Harry Potter: and the Chamber of Secrets - Gryffindor Edition",
-      "description": "Harry Potter: and the Chamber of Secrets - Gryffindor Edition",
-      "price": 19.99,
-      "image": "https://m.media-amazon.com/images/I/51LBatXrSkL._SY445_SX342_.jpg"
-    },
-    {
-      "id": 100004,
-      "name": "Harry Potter: and the Goblet of Fire - Gryffindor Edition",
-      "description": "Harry Potter: and the Goblet of Fire - Gryffindor Edition",
-      "price": 19.99,
-      "image": "https://m.media-amazon.com/images/I/41Pce2XCYrL._SY445_SX342_.jpg"
-    },
-    {
-      "id": 100005,
-      "name": "Harry Potter: and the Order of the Phoenix - Gryffindor Edition",
-      "description": "Harry Potter: and the Order of the Phoenix - Gryffindor Edition",
-      "price": 19.99,
-      "image": "https://m.media-amazon.com/images/I/41K3RcliRDL._SY445_SX342_.jpg"
-    },
-    {
-      "id": 100006,
-      "name": "Harry Potter: and the Half-Blood Prince - Gryffindor Edition",
-      "description": "Harry Potter: and the Half-Blood Prince - Gryffindor Edition",
-      "price": 19.99,
-      "image": "https://m.media-amazon.com/images/I/51xa23rkJSL._SY445_SX342_.jpg"
-    },
-    {
-      "id": 100007,
-      "name": "Harry Potter: and the Deathly Hallows - Gryffindor Edition",
-      "description": "Harry Potter: and the Deathly Hallows - Gryffindor Edition",
-      "price": 19.99,
-      "image": "https://m.media-amazon.com/images/I/8137pZnQAVL._SY522_.jpg"
-    }
-  ]
-  
+  {
+    "id": 100000,
+    "name": "The Lean Startup",
+    "description": "The Lean Startup",
+    "price": 29.99,
+    "image": "https://m.media-amazon.com/images/I/41+ZsplOPWL._SY445_SX342_.jpg",
+    "rating": 3
+  },
+  {
+    "id": 100001,
+    "name": "Harry Potter: and the Prisoner of Azkaban - Gryffindor Edition",
+    "description": "Harry Potter: and the Prisoner of Azkaban - Gryffindor Edition",
+    "price": 19.99,
+    "image": "https://m.media-amazon.com/images/I/4148eudPKmL._SY445_SX342_.jpg",
+    "rating": 4
+  },
+  {
+    "id": 100002,
+    "name": "Harry Potter: and the Philosopher's Stone - Gryffindor Edition",
+    "description": "Harry Potter: and the Philosopher's Stone - Gryffindor Edition",
+    "price": 19.99,
+    "image": "https://m.media-amazon.com/images/I/81yA0EpKucL._SY522_.jpg",
+    "rating": 4
+  },
+  {
+    "id": 100003,
+    "name": "Harry Potter: and the Chamber of Secrets - Gryffindor Edition",
+    "description": "Harry Potter: and the Chamber of Secrets - Gryffindor Edition",
+    "price": 19.99,
+    "image": "https://m.media-amazon.com/images/I/51LBatXrSkL._SY445_SX342_.jpg",
+    "rating": 3
+  },
+  {
+    "id": 100004,
+    "name": "Harry Potter: and the Goblet of Fire - Gryffindor Edition",
+    "description": "Harry Potter: and the Goblet of Fire - Gryffindor Edition",
+    "price": 19.99,
+    "image": "https://m.media-amazon.com/images/I/41Pce2XCYrL._SY445_SX342_.jpg",
+    "rating": 3
+  },
+  {
+    "id": 100005,
+    "name": "Harry Potter: and the Order of the Phoenix - Gryffindor Edition",
+    "description": "Harry Potter: and the Order of the Phoenix - Gryffindor Edition",
+    "price": 19.99,
+    "image": "https://m.media-amazon.com/images/I/41K3RcliRDL._SY445_SX342_.jpg",
+    "rating": 4
+  },
+  {
+    "id": 100006,
+    "name": "Harry Potter: and the Half-Blood Prince - Gryffindor Edition",
+    "description": "Harry Potter: and the Half-Blood Prince - Gryffindor Edition",
+    "price": 19.99,
+    "image": "https://m.media-amazon.com/images/I/51xa23rkJSL._SY445_SX342_.jpg",
+    "rating": 4
+  },
+  {
+    "id": 100007,
+    "name": "Harry Potter: and the Deathly Hallows - Gryffindor Edition",
+    "description": "Harry Potter: and the Deathly Hallows - Gryffindor Edition",
+    "price": 19.99,
+    "image": "https://m.media-amazon.com/images/I/8137pZnQAVL._SY522_.jpg",
+    "rating": 5
+  }
+]
